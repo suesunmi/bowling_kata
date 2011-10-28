@@ -1,5 +1,4 @@
 class Game
-
   def initialize
     @all_rolls = Array.new(21, 0)
     @current_roll = 0
@@ -37,5 +36,4 @@ class Game
   def spare?(roll_index)
     @all_rolls[roll_index] + @all_rolls[roll_index+1] == 10
   end
-
 end
